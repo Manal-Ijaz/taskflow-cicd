@@ -10,14 +10,20 @@
   <div class="container">
     <h1>Add Task</h1>
     <form>
-      <input type="text" placeholder="Title"><br><br>
-      <input type="date"><br><br>
-      <select>
-        <option>High</option>
-        <option>Medium</option>
-        <option>Low</option>
+      <label for="task-title">Title</label><br>
+      <input id="task-title" name="title" type="text" placeholder="Title" required><br><br>
+
+      <label for="task-due-date">Due date</label><br>
+      <input id="task-due-date" name="dueDate" type="date" required><br><br>
+
+      <label for="task-priority">Priority</label><br>
+      <select id="task-priority" name="priority" required>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
       </select><br><br>
-      <button type="button">Save Task</button>
+
+      <button type="submit">Save Task</button>
     </form>
     <br>
     <a href="index.html">Back to Home</a>
