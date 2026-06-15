@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Task</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Add Task</h1>
+    <form>
+      <label for="task-title">Title</label><br>
+      <input id="task-title" name="title" type="text" placeholder="Title" required><br><br>
+
+      <label for="task-due-date">Due date</label><br>
+      <input id="task-due-date" name="dueDate" type="date" required><br><br>
+
+      <label for="task-priority">Priority</label><br>
+      <select id="task-priority" name="priority" required>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select><br><br>
+
+      <button type="submit">Save Task</button>
+    </form>
+    <br>
+    <a href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>
